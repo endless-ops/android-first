@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!--
+        常用属性：
+            第一类：属性值为true 或 false
+                android:layout_centerHorizontal 相对与父元素水平居中
+                android:layout_centerVertical  相对于父元素垂直居中
+                android:layout_centerInparent   相对于父元素完全居中（水平垂直都居中）
+                android:layout_alignParentBottom   贴紧父元素的下边缘
+                android:layout_alignParentLeft     贴紧父元素的左边缘
+                android:layout_alignParentRight     贴紧父元素的右边缘
+                android:layout_alignParentTop       贴紧父元素的上边缘
+
+            第二类：属性值必须为id的引用名“@+id/name”
+                android:layout_below    在某元素的下方
+                android:layout_above    在某元素的上方
+                android:layout_toLeftOf 在某元素的左边
+                android:layout_toRightOf 在某元素的右边
+                android:layout_alignTop     本元素的上边缘和某元素的上边缘对齐
+                android:layout_alignLeft     本元素的左边缘和某元素的左边缘对齐
+                android:layout_alignRight     本元素的右边缘和某元素的右边缘对齐
+                android:layout_alignBottom     本元素的下边缘和某元素的下边缘对齐
+
+            第三类：属性值为具体的值：如 30dp
+                android:layout_marginBottom     离某元素的底边缘的距离
+                android:layout_marginLeft     离某元素的左边缘的距离
+                android:layout_marginRight     离某元素的右边缘的距离
+                android:layout_marginTop     离某元素的上边缘的距离
+
+    -->
+    <TextView
+        android:id="@+id/tv_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="用户名:"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/et_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/tv_nickname"
+        android:autofillHints="name"
+        android:hint="请输入用户名"
+        android:textSize="20sp" />
+        <!-- layout_toRightOf 替换成 layout_toEndOf -->
+
+
+    <TextView
+        android:id="@+id/tv_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/tv_nickname"
+        android:layout_alignBottom="@+id/et_password"
+        android:textSize="20sp"
+        android:text="密   码:"/>
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_nickname"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/tv_password"
+        android:hint="请输入密码"
+        android:minHeight="48dp"
+        android:textSize="20sp" />
+
+
+    <Button
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_password"
+        android:layout_alignParentRight="true"
+        android:text="登录"/>
+</RelativeLayout>

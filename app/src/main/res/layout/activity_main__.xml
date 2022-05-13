@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!-- 自定义View -->
+<cn.dreamchase.android.first.view.MyView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/holo_green_dark"
+    custom:sweepAngleAdd="10"><!-- 自定义属性: attrs.xml -->
+<!-- 自定义属性：需要加入View的命名空间: xmlns:custom="http://schemas.android.com/apk/res-auto"  -->
+
+
+</cn.dreamchase.android.first.view.MyView>

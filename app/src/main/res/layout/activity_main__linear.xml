@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- LinearLayout -->
+<!--<LinearLayout-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:orientation="vertical"> -->
+    <!-- orientation：表示排列方式。其属性值为：vertical:垂直排列，horizontal:水平排列 -->
+
+
+    <!-- android:layout_gravity 表示对齐方式。是 LinearLayout子元素的特有属性，其属性值有
+        top,
+        bottom,
+        left,
+        right,
+        center_vertical,
+        center_horizontal,
+        center,
+        fill
+    -->
+
+    <!-- weight 权重.用来分配子view在此布局中的占用空间，只有线性布局包裹的view才有这个属性。 -->
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="文本1"/>-->
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center_horizontal"-->
+<!--        android:text="文本2"/>-->
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="文本3"/>-->
+<!--    -->
+<!--</LinearLayout>-->
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <!-- weight 权重.用来分配子view在此布局中的占用空间，只有线性布局包裹的view才有这个属性。 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_red_light"
+        android:layout_weight="1"
+        android:text="文本1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_green_light"
+        android:layout_weight="1"
+        android:text="文本2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_light"
+        android:layout_weight="1"
+        android:text="文本3"/>
+</LinearLayout>

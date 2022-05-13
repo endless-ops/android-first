@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- 自定义属性 -->
+<resources>
+    <declare-styleable name="customStyleView">
+        <attr name="sweepAngleAdd" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="customLayoutLP">
+        <attr name="layout_position">
+            <enum name="right" value="1"/>
+            <enum name="bottom" value="2"/>
+        </attr>
+    </declare-styleable>
+</resources>

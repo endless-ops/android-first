@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 自定义MyViewGroupN -->
+<!-- wrap_content:和自身内容一样的长度 -->
+<!-- 此时ViewGroup的宽高仍然填充整个屏幕，此时需要在onMeasure()方法通过代码完成调整,和自身内容一样的长度 -->
+<cn.dreamchase.android.first.my.view.group.n.MyViewGroupN
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/darker_gray">
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@android:color/holo_red_light"
+        android:padding="10dp"
+        android:text="1" />
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        android:background="@android:color/holo_blue_light"
+        android:padding="10dp"
+        android:text="2"/>
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@android:color/holo_red_light"
+        android:padding="10dp"
+        android:text="3"/>
+
+</cn.dreamchase.android.first.my.view.group.n.MyViewGroupN>

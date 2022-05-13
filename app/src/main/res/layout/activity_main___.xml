@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 自定义MyViewGroup -->
+<!-- match_parent:和父组件一样的长度 -->
+<cn.dreamchase.android.first.my.view.group.f.MyViewGroup
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray">
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@android:color/holo_red_light"
+        android:padding="10dp"
+        android:text="1" />
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        android:background="@android:color/holo_blue_light"
+        android:padding="10dp"
+        android:text="2"/>
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@android:color/holo_red_light"
+        android:padding="10dp"
+        android:text="3"/>
+
+</cn.dreamchase.android.first.my.view.group.f.MyViewGroup>

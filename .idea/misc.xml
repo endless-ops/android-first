@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/projectworkspace/android-workspace/android-first/app/src/main/res/layout/activity_main.xml" value="0.176" />
+        <entry key="..\:/projectworkspace/android-workspace/android-first/app/src/main/res/layout/activity_main_.xml" value="0.16998827667057445" />
+        <entry key="..\:/projectworkspace/android-workspace/android-first/app/src/main/res/layout/activity_main__.xml" value="0.169921875" />
+        <entry key="..\:/projectworkspace/android-workspace/android-first/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.236" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="10" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
