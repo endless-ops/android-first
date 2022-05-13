@@ -1,7 +1,4 @@
-package cn.dreamchase.android.first;
-
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
+package cn.dreamchase.android.first.textview;
 
 import android.graphics.Color;
 import android.os.Bundle;
@@ -14,6 +11,11 @@ import android.text.style.ClickableSpan;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
+import cn.dreamchase.android.first.R;
 
 public class MainActivity extends AppCompatActivity {
 
