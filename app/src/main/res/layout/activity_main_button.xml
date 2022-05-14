@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/ll_root_view">
+
+    <!-- 按钮1 -->
+    <Button
+        android:id="@+id/btn_click_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="button点击事件写法1"/>
+
+    <!-- 按钮2 -->
+    <Button
+        android:id="@+id/btn_click_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="click"
+        android:text="button点击事件写法2"/>
+
+    <!-- 按钮3：设置一张背景图片用android:background属性 -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/ic_launcher"
+        android:padding="10dp"
+        android:text="button设置背景图片"/>
+
+    <!-- 按钮4：设置背景颜色用android:background属性 -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/holo_red_dark"
+        android:padding="10dp"
+        android:text="button设置背景颜色"/>
+
+    <!-- 按钮5：设置背景shape ,用android:background属性,
+        可以自定义button的外观，从效果图中可以看到button背景透明，有边框，有弧度，
+     -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_button_test"
+        android:padding="10dp"
+        android:text="button设置背景图片"/>
+
+    <!-- 按钮6：设置按钮的样式 -->
+    <TextView
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:text="v7包按钮样式"
+        android:textColor="#ffffffff"
+        android:textSize="20sp"/>
+
+</LinearLayout>

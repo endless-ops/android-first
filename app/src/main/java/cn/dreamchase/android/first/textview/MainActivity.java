@@ -94,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * -9.TextView设置点击事件Spannable
+     * -9.TextView设置点击事件Spannable,Spannable能够更简便的设置文字样式
      *
      * @param a
      */
