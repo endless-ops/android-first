@@ -17,7 +17,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import cn.dreamchase.android.first.R;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity_TextView extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
      */
     protected void setValue(int a) {
         TextView textView = findViewById(R.id.tv1);
-        textView.setText(getString(R.string.testing, new Integer[]{11, 21, 31}));
+        textView.setText(getString(R.string.testing, new int[]{11, 21, 31}));
     }
 
     /**
@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
         textView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "点击了TextView3", Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity_TextView.this, "点击了TextView3", Toast.LENGTH_LONG).show();
             }
         });
     }
@@ -105,7 +105,7 @@ public class MainActivity extends AppCompatActivity {
         ClickableSpan clickableSpan = new ClickableSpan() {
             @Override
             public void onClick(@NonNull View widget) {
-                Toast.makeText(MainActivity.this, "9.TextView设置点击事件Spannable", Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity_TextView.this, "9.TextView设置点击事件Spannable", Toast.LENGTH_LONG).show();
             }
         };
 
@@ -124,7 +124,7 @@ public class MainActivity extends AppCompatActivity {
         textView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "点击了TextView9", Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity_TextView.this, "点击了TextView9", Toast.LENGTH_LONG).show();
             }
         });
     }

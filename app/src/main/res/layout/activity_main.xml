@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:id="@+id/ll_root_view">
+    android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <!--
+        RecyclerView 没有android:divider 和 android:dividerHeight属性
+        分隔线需要手动实现
 
 
-</LinearLayout>
+        需要继承ItemDecoration类，实现onDraw与getItemOffsets方法
+        调用RecyclerView的addItemDecoration方法
+    -->
+</RelativeLayout>

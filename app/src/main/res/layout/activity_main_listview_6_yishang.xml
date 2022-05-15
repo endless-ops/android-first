@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 1.列表的显示需要三个元素：
+        ListView 用来展示列表的view
+        适配器：用来把数据映射到ListView上的中介
+        数据源：ListView中的每一行view对应数据源的一条数据
+     -->
+
+    <!-- 3.设置分割线
+        android:divider  分割线颜色
+        android:dividerHeight 分割线高度
+     -->
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@android:color/holo_blue_bright"
+        android:dividerHeight="5dp"/>
+
+</RelativeLayout>

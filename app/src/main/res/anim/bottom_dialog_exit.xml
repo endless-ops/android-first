@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<translate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="225"
+    android:fromYDelta="0%"
+    android:interpolator="@android:anim/accelerate_interpolator"
+    android:toYDelta="100%"
+    />
+
+<!-- android:duration  动画的运行事件，毫秒为单位
+     android:fromYDelta  动画起始时，Y坐标上的位置
+     android:toYDelta   动画结束时，Y坐标上的位置
+     android:interpolator  用来修饰动画效果，定义动画的变化率，可以使动画效果 accelerated（加速）
+        decelerated（减速），repeated（重复），bounced（弹跳）等
+ -->

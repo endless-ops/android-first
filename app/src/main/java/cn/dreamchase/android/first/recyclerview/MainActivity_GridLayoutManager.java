@@ -1,19 +1,17 @@
-package cn.dreamchase.android.first;
+package cn.dreamchase.android.first.recyclerview;
+
+import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import androidx.recyclerview.widget.StaggeredGridLayoutManager;
-
-import android.os.Bundle;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import cn.dreamchase.android.first.recyclerview.DividerGridItemDecoration;
-import cn.dreamchase.android.first.recyclerview.RecyclerViewAdapter;
+import cn.dreamchase.android.first.R;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity_GridLayoutManager extends AppCompatActivity {
 
     private RecyclerView recyclerView;
 
@@ -30,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
         recyclerView = findViewById(R.id.recyclerview);
 
-        recyclerView.setLayoutManager(new StaggeredGridLayoutManager(3,StaggeredGridLayoutManager.VERTICAL));
+        recyclerView.setLayoutManager(new GridLayoutManager(this,2));
 
         // 如果要显示多列或者纵向显示，只需新建不同的构造方法即可，以下代码纵向显示4列，如果还需要反方向显示，把false改成true
         // recyclerView.setLayoutManager(new GridLayoutManager(this,4,GridLayoutManager.HORIZONTAL,false));

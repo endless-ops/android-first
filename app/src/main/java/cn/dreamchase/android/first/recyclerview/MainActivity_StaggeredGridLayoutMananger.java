@@ -1,19 +1,17 @@
-package cn.dreamchase.android.first;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-import androidx.recyclerview.widget.StaggeredGridLayoutManager;
+package cn.dreamchase.android.first.recyclerview;
 
 import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import cn.dreamchase.android.first.recyclerview.DividerGridItemDecoration;
-import cn.dreamchase.android.first.recyclerview.RecyclerViewAdapter;
+import cn.dreamchase.android.first.R;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity_StaggeredGridLayoutMananger extends AppCompatActivity {
 
     private RecyclerView recyclerView;
 

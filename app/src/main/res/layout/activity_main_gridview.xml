@@ -1,0 +1,21 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--
+        android:numColumns   一行显示4列
+        android:scrollbars   去掉滚动条
+        android:horizontalSpacing  两列之间的间距
+        android:verticalSpacing   两行之间的间距
+     -->
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:horizontalSpacing="10dp"
+        android:numColumns="4"
+        android:scrollbars="none"
+        android:verticalSpacing="10dp" />
+
+</RelativeLayout>
