@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -43,6 +44,14 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     @Override
     public void onBindViewHolder(@NonNull MyViewHoldr holder, int position) {
         holder.textView.setText(datas.get(position));
+
+
+        // -用于- SwipeRefreshLayout 加载更多 -->
+        if (position > 5 && position == datas.size() - 1) {
+            holder.progressBar.setVisibility(View.VISIBLE);
+        }else {
+            holder.progressBar.setVisibility(View.GONE);
+        }
     }
 
     @Override
@@ -53,10 +62,13 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     class MyViewHoldr extends RecyclerView.ViewHolder {
         private TextView textView;
 
-
+        // -- SwipeRefreshLayout 加载更多 -->
+        private ProgressBar progressBar;
        public MyViewHoldr(@NonNull View itemView) {
            super(itemView);
            textView = itemView.findViewById(R.id.textview);
+
+           progressBar = itemView.findViewById(R.id.progressBar);
        }
    }
 }

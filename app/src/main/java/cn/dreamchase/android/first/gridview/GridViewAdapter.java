@@ -8,8 +8,6 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 
 import java.util.List;
-
-import cn.dreamchase.android.first.MainActivity;
 import cn.dreamchase.android.first.R;
 
 public class GridViewAdapter extends BaseAdapter {

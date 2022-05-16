@@ -1,4 +1,4 @@
-package cn.dreamchase.android.first;
+package cn.dreamchase.android.first.viewpager;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -6,8 +6,7 @@ import android.util.Log;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
-import cn.dreamchase.android.first.viewpager.FragmentAdapter;
-import cn.dreamchase.android.first.viewpager.FragmentTest;
+import cn.dreamchase.android.first.R;
 
 /**
  * -ViewPager 翻页视图
@@ -15,7 +14,7 @@ import cn.dreamchase.android.first.viewpager.FragmentTest;
  * ，这个PagerAdapter是一个基类适配器，经常用来实现app引导图，它的子类有FragmentPagerAdapter和FragmentStatePagerAdapter
  * 和Fragment一起使用
  */
-public class MainActivity extends AppCompatActivity {
+public class MainActivity_ViewPager extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

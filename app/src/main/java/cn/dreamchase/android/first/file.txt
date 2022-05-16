@@ -1,0 +1,140 @@
+通过xml文件修饰view
+
+1.shapes (设置圆角、边框、填充色、渐变色)
+    shape:用来控制控件（view）的几何形状，有6个子标签
+    corners:圆角
+    solid：填充颜色
+    stroke：描边
+    padding：内边距
+    size：宽高
+    gradient：渐变(不能与填充色同时使用)
+
+    在res/drawable目录下新建一个文件tv_shape.xml
+        <?xml version="1.0" encoding="utf-8"?>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android">
+            <!-- 圆角 -->
+            <corners android:radius="10dp">
+            <!-- 填充颜色 -->
+            <solid android:color="@android:color/white"/>
+            <!-- 描边 -->
+            <stroke android:width="5dp" android:color="@color/colorAccent"/>
+            <!-- 内边距 -->
+            <padding android:top="10dp" android:bottom="10dp" android:left="10dp" android:right="10dp"/>
+        </shape>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height=""
+            android:background="@drawable/tv_shape"
+            android:text=""/>
+
+
+       新建一个文件tv_shape_two.xml
+            <?xml version="1.0" encoding="utf-8"?>
+            <shape xmlns:android="http://schemas.android.com/apk/res/android">
+                <!-- 圆角 -->
+                <corners android:radius="10dp">
+                <!-- 宽高 -->
+                <size android:width="100dp" android:height="100dp"/>
+                <!-- 描边 -->
+                <stroke android:width="5dp" android:color="@color/colorAccent"/>
+                <!-- 内边距 -->
+                <padding android:top="10dp" android:bottom="10dp" android:left="10dp" android:right="10dp"/>
+                <!-- 渐变 -->
+                <gradient
+                    android:endColor=""
+                    android:gradientRadius=""
+                    android:startColor=""
+                    android:type="linear"/> <!-- android:type="linear" 默认渐变模式，即线性渐变，
+                                                可以指定渐变为径向渐变  android:type="radial"
+                                                径向渐变需要指定半径 android:gradientRadius=""
+                                             -->
+            </shape>
+
+
+
+2.selector （设置点击、选中点击效果）
+    android:state_pressed属性
+        新建一个 selector_button_pressed.xml文件
+            <?xml version="1.0" encoding="utf-8"?>
+            <selector xmlns:android="http://schemas.android.com/apk/res/android">
+                <!-- 按下背景颜色 -->
+                <item android:drawable="@color/colorAccent" android:state_pressed="true"/>
+                <!-- 默认背景颜色 -->
+                <item android:drawable="@color/colorAccent"/>
+            </selector>
+
+        给按钮设置一个背景颜色
+            android:background="@drawable/selector_button_pressed"
+
+    android:state_checked
+        一般checkbox使用这个属性
+        新建 selector_check_state.xml
+            <?xml version="1.0" encoding="utf-8"?>
+            <selector xmlns:android="http://schemas.android.com/apk/res/android">
+                <!-- 选中时显示图片 -->
+                <item android:drawable="@mipmap/icon_checkbox_selector" android:state_checked="true"/>
+                <!-- 未选中时显示图片 -->
+                <item android:drawable="@mipmap/colorAccent" android:state_checked="false"/>
+            </selector>
+
+        checkbox控件的android:button引用这个文件
+        <Checkbox
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height=""
+            android:button="@drawable/selector_check_state" />
+
+
+    android:state_selected
+        选中状态和未选中状态，这个属性大部分控件皆可用
+        新建一个文件 selector_imageview.xml
+           <?xml version="1.0" encoding="utf-8"?>
+           <selector xmlns:android="http://schemas.android.com/apk/res/android">
+               <!-- 选中时显示图片 -->
+               <item android:drawable="@mipmap/icon_checkbox_selector" android:state_selected="true"/>
+               <!-- 未选中时显示图片 -->
+               <item android:drawable="@mipmap/colorAccent" android:state_selected="false"/>
+           </selector>
+
+        给imageView控件设置android:background
+            android:background="@drawable/selector_check_state"
+
+
+        在MainActivity中设置ImageView点击事件，
+            imageView.setSelected(!imageView.isSelected())
+
+
+
+3.layer_list  把item按照顺序层叠显示
+    使用layer_list可以将多个drawable按照顺序层叠在一起显示。最先定义的在最下方显示，后面的依次往上叠放
+
+    在drawable目录下新建 layer_list_textview.xml
+        <layer_list xmlns:android="http://schemas.android.com/apk/res/android">
+            <item>
+                <shape android:shape="rectangle">
+                    <solid android:color=""/>
+                </shape>
+            </item>
+
+            <item android:bottom="" android:top="" android:left="" android:right="">
+                <shape android:shape="rectangle">
+                    <solid android:color=""/>
+                </shape>
+            </item>
+
+            <item android:bottom="" android:top="" android:left="" android:right="">
+               <shape android:shape="rectangle">
+                   <solid android:color=""/>
+               </shape>
+           </item>
+
+        </layer_list>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height=""
+            android:background="@drawable/layer_list_textview"
+            android:text=""/>
